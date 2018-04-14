@@ -3,6 +3,7 @@ var cliente = require('../models/Cliente');
 module.exports = {
 
     index: function(req, res, next) {
+        //mode to call model
         cliente.setNome('Joao');
         var eu = cliente.getNome();
 
